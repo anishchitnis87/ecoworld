@@ -113,7 +113,7 @@ export function usePostMessage(): PostToRN {
                             cat: (task.category || 'LIFESTYLE').toUpperCase(),
                             pts: Math.round((task.xpReward || 10) / 5),
                             xp: task.xpReward || 10,
-                            proofType: (task.proofRequired ? 'PHOTO' : 'SELF') as 'PHOTO' | 'SELF',
+                            proofType: (task.proofRequired ? 'PHOTO' : 'REFLECTION') as 'PHOTO' | 'REFLECTION',
                             chapterId: null,
                             chapterName: null,
                         }))

@@ -13,7 +13,7 @@ export type SeedStage =
     | 'ANCIENT_GUARDIAN'
 
 // ─── Proof & Category Types ────────────────────────────────────────────────────
-export type ProofType = 'SELF' | 'PHOTO' | 'REFLECTION'
+export type ProofType = 'PHOTO' | 'REFLECTION'
 
 export type TileCategory =
     | 'TRANSPORT'

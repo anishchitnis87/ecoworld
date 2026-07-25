@@ -46,12 +46,10 @@ export function TileCard({ tile, isPending, isDone, onTap }: Props) {
                 </span>
             )}
 
-            {/* Row 5: proof badge */}
-            {tile.proofType !== 'SELF' && (
-                <span className="text-[8px] text-amber-400 bg-amber-400/[0.12] rounded-md px-1.5 py-0.5 w-fit font-dm">
-                    {tile.proofType === 'PHOTO' ? '📸 Photo proof' : '✍️ Reflection'}
-                </span>
-            )}
+            {/* Row 5: proof badge — every tile now requires photo or reflection proof */}
+            <span className="text-[8px] text-amber-400 bg-amber-400/[0.12] rounded-md px-1.5 py-0.5 w-fit font-dm">
+                {tile.proofType === 'PHOTO' ? '📸 Photo proof' : '✍️ Reflection'}
+            </span>
 
             {/* Button */}
             {isDone ? (
@@ -61,10 +59,6 @@ export function TileCard({ tile, isPending, isDone, onTap }: Props) {
             ) : isPending ? (
                 <button disabled className="mt-auto w-full rounded-xl py-1.5 text-[10px] font-syne font-bold bg-white/[0.08] text-amber-400 cursor-default">
                     ⏳ Saving…
-                </button>
-            ) : tile.proofType === 'SELF' ? (
-                <button onClick={onTap} className="mt-auto w-full rounded-xl py-1.5 text-[10px] font-syne font-bold bg-eco-green text-white active:scale-95 transition-transform">
-                    ✓ Log It
                 </button>
             ) : (
                 <button onClick={onTap} className="mt-auto w-full rounded-xl py-1.5 text-[10px] font-syne font-bold bg-amber-500 text-white active:scale-95 transition-transform">

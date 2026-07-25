@@ -22,13 +22,13 @@ const ALL_TILES: EcoTile[] = [
     {
         id: 't1', icon: '🚌',
         label: 'Used public transport today',
-        cat: 'TRANSPORT', pts: 2, xp: 10, proofType: 'SELF',
+        cat: 'TRANSPORT', pts: 2, xp: 10, proofType: 'REFLECTION',
         chapterId: 'ch1_climate', chapterName: 'Climate Change',
     },
     {
         id: 't2', icon: '🚴',
         label: 'Cycled or walked instead of car',
-        cat: 'TRANSPORT', pts: 3, xp: 15, proofType: 'SELF',
+        cat: 'TRANSPORT', pts: 3, xp: 15, proofType: 'REFLECTION',
         chapterId: 'ch1_climate', chapterName: 'Climate Change',
     },
     {
@@ -40,7 +40,7 @@ const ALL_TILES: EcoTile[] = [
     {
         id: 't4', icon: '🔌',
         label: 'Unplugged devices on standby',
-        cat: 'ENERGY', pts: 2, xp: 10, proofType: 'SELF',
+        cat: 'ENERGY', pts: 2, xp: 10, proofType: 'REFLECTION',
         chapterId: 'ch6_energy', chapterName: 'Renewable Energy',
     },
     {
@@ -58,19 +58,19 @@ const ALL_TILES: EcoTile[] = [
     {
         id: 't7', icon: '♻️',
         label: 'Segregated household waste today',
-        cat: 'LIFESTYLE', pts: 2, xp: 10, proofType: 'SELF',
+        cat: 'LIFESTYLE', pts: 2, xp: 10, proofType: 'REFLECTION',
         chapterId: 'ch7_waste', chapterName: 'Waste Management',
     },
     {
         id: 't8', icon: '🛍️',
         label: 'Refused single-use plastic today',
-        cat: 'LIFESTYLE', pts: 2, xp: 10, proofType: 'SELF',
+        cat: 'LIFESTYLE', pts: 2, xp: 10, proofType: 'REFLECTION',
         chapterId: 'ch3_pollution', chapterName: 'Pollution',
     },
     {
         id: 't9', icon: '💧',
         label: 'Turned off tap while brushing',
-        cat: 'WATER', pts: 2, xp: 10, proofType: 'SELF',
+        cat: 'WATER', pts: 2, xp: 10, proofType: 'REFLECTION',
         chapterId: 'ch8_water', chapterName: 'Water Conservation',
     },
     {
@@ -88,7 +88,7 @@ const ALL_TILES: EcoTile[] = [
     {
         id: 't12', icon: '🍱',
         label: 'Brought home-cooked food',
-        cat: 'FOOD', pts: 2, xp: 10, proofType: 'SELF',
+        cat: 'FOOD', pts: 2, xp: 10, proofType: 'REFLECTION',
         chapterId: 'ch7_waste', chapterName: 'Waste Management',
     },
     {
@@ -106,7 +106,7 @@ const ALL_TILES: EcoTile[] = [
     {
         id: 't15', icon: '🌍',
         label: 'Shared an eco fact with someone',
-        cat: 'LIFESTYLE', pts: 1, xp: 5, proofType: 'SELF',
+        cat: 'LIFESTYLE', pts: 1, xp: 5, proofType: 'REFLECTION',
         chapterId: null, chapterName: null,
     },
     {
